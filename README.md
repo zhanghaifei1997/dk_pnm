@@ -1,30 +1,32 @@
-# dk_pnm_web
+# 毒客人员管理系统
 
-> 毒客人员管理系统
+> 没有最好，只有更好
+
+> 技术创造未来
+
+## 技术选型
+
+> 写东西可以写的慢，但是一定要好
+
+> 规格具体到每个token
+
+前端架构： vue + vuex + antd + less
+
+- 页面架构风格：https://game.web-tycoon.com/ratings
+
+> 协作者  
+> duYa 
+
 
 ## Build Setup
 
 ``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
+// 安装依赖包
+npm install 
+// 启动服务
 npm run dev
-
-# build for production with minification
+// 打包
 npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
+// 测试
 npm test
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
