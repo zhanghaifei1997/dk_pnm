@@ -2,7 +2,8 @@
   <a-layout-sider
     :trigger="null"
     collapsible
-    v-model="collapsed"
+    theme="light"
+    v-model="$store.getters.CommonStatus.collapsed"
     class="dk_sider">
     <div class="dk_header_logo">
       <img :src="github" class="dk_header_img"/>
@@ -19,8 +20,8 @@
         </a-menu-item>
         <a-sub-menu :key="menu.key" v-else>
           <span slot="title">
-            <a-icon :type="menu.icon"/>
-            {{menu.menuName}}
+            <a-icon :type="menu.icon" />
+            <span>{{menu.menuName}}</span>
           </span>
           <template v-for="childItem in menu.child">
             <a-menu-item :key="childItem.key">{{childItem.menuName}}</a-menu-item>
@@ -41,10 +42,7 @@
     export default {
         name: "DKSider",
         props: {
-          collapsed: {
-            type: Boolean,
-            default: false
-          }
+
         },
         data() {
           return {
@@ -65,9 +63,6 @@
 <style lang="less" scoped>
   .dk_sider {
     height: 100vh;
-    .ant-menu{
-      height: calc(100% - 172px);
-    }
     .dk_header_logo {
       display: flex;
       /*margin: 20px 0;*/
@@ -77,8 +72,8 @@
       flex-direction: column;
       background: #fff;
       .dk_header_img {
-        width: 100px;
-        height: 100px;
+        width: 50%;
+        max-height: 100px;
         border-radius: 100%;
       }
       .dk_header_desc {

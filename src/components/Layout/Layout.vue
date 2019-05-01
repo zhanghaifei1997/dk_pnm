@@ -1,9 +1,9 @@
 <template>
   <div class="dk_layout">
     <a-layout id="components-layout-demo-custom-trigger">
-      <DKSider :collapsed.sync="collapsed"/>
+      <DKSider/>
       <a-layout>
-        <DKHeader :collapsed.sync="collapsed" @changeCollapsed="changeCollapsed"/>
+        <DKHeader/>
         <DKContent />
       </a-layout>
     </a-layout>
@@ -25,13 +25,11 @@
         },
         data() {
           return {
-            collapsed: false
+
           }
         },
         methods: {
-          changeCollapsed() {
-            this.collapsed != this.collapsed;
-          }
+
         }
     }
 </script>

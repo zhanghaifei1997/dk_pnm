@@ -93,8 +93,15 @@
         }
       ,
       methods: {
-        loginSubmit() {
-
+        loginSubmit(e) {
+          e.preventDefault();
+          this.loginForm.validateFields((err, values) => {
+            // console.log(err)
+            // console.log(values)
+            if(!err) {
+              this.$router.push("/dk")
+            }
+          })
         }
       }
     }
