@@ -2,7 +2,7 @@
   <a-layout-header class="dk_header">
     <a-icon
       class="trigger"
-      :type="childCollapsed ? 'menu-unfold' : 'menu-fold'"
+      :type="$store.getters.CommonStatus.collapsed ? 'menu-unfold' : 'menu-fold'"
       @click="change"
     />
   </a-layout-header>
@@ -12,26 +12,22 @@
     export default {
         name: "DKHeader",
         props: {
-          collapsed: {
-            type: Boolean,
-            default: false
-          }
         },
         data() {
           return {
-            childCollapsed: this.collapsed
+
           }
         },
         methods: {
           change() {
-            this.childCollapsed = !this.childCollapsed;
-            this.$emit("changeCollapsed", this.childCollapsed)
+            this.$store.dispatch("updateCollapsed")
           }
         },
         watch: {
-          collapsed(val) {
-            this.childCollapsed = !val
-          }
+
+        },
+        created() {
+
         }
     }
 </script>
@@ -41,5 +37,8 @@
   padding: 0 20px;
   border-left: 1px solid #efefef;
   background: #fff!important;
+  .anticon {
+    padding: 20px 0;
+  }
 }
 </style>

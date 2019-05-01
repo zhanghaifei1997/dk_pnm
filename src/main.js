@@ -8,9 +8,11 @@ import router from './router'
 import Antd from 'ant-design-vue'
 import 'ant-design-vue/dist/antd.css'
 
-
 import './assets/css/reset'
 import './assets/css/common'
+
+// 引入store
+import store from './store'
 
 Vue.config.productionTip = false
 
@@ -21,5 +23,6 @@ new Vue({
   el: '#app',
   router,
   components: { App },
+  store,
   template: '<App/>'
 })
