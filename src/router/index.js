@@ -9,12 +9,18 @@ export default new Router({
     { // 默认进入登陆页面
       path: '/',
       name: 'login',
-      component: () => import("@/views/login")
+      component: () => import("@/views/login"),
+      meta: {
+        title: "登录"
+      }
     },
     {
       path: "/dk",
       name: "dk",
-      component: () => import("@/components/Layout")
+      component: () => import("@/components/Layout"),
+      meta: {
+        title: "首页"
+      }
     }
   ]
 })
