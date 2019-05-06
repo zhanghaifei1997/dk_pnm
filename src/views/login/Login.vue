@@ -117,6 +117,7 @@
   .dk_login_content {
     margin: 0 auto;
     width: 388px;
+    max-width: 80%;
     h3 {
       height: 5vh;
       line-height: 5vh;

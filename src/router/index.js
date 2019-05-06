@@ -20,7 +20,18 @@ export default new Router({
       component: () => import("@/components/Layout"),
       meta: {
         title: "首页"
-      }
+      },
+      redirect: "/basicInfo",
+      children: [
+        { // 个人信息页面
+          path: "/basicInfo",
+          name: "basicInfo",
+          component: () => import("@/views/basicInfo"),
+          meta: {
+            title: "个人中心"
+          }
+        }
+      ]
     }
   ]
 })

@@ -1,6 +1,6 @@
 <template>
   <a-layout-content class="dk_container">
-    我的世界
+    <router-view/>
   </a-layout-content>
 </template>
 
