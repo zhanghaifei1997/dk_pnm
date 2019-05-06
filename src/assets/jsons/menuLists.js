@@ -8,7 +8,8 @@ export default {
       key: "person",
       menuName: "个人中心",
       icon: "user",
-      isHasChild: false
+      isHasChild: false,
+      path: "/basicInfo"
     },
     {
       key: "menu",
@@ -18,7 +19,8 @@ export default {
       child: [
         {
           key: "menu-list",
-          menuName: "菜单列表"
+          menuName: "菜单列表",
+          path: "/menuList"
         }
       ]
     },
@@ -30,7 +32,8 @@ export default {
       child: [
         {
           key: "staff-list",
-          menuName: "员工列表"
+          menuName: "员工列表",
+          path: "/employee"
         }
       ]
     }

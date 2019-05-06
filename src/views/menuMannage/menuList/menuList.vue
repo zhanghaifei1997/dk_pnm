@@ -1,12 +1,12 @@
 <template>
   <section>
-    个人中心
+    菜单列表
   </section>
 </template>
 
 <script>
     export default {
-        name: "basicInfo"
+        name: "menuMannage"
     }
 </script>
 

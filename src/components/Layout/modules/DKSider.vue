@@ -14,9 +14,11 @@
     </div>
     <a-menu :theme="themeConfig.color" mode="inline" :defaultSelectedKeys="['person']">
       <template v-for="menu in menuLists">
-        <a-menu-item :key="menu.key" v-if="!menu.isHasChild">
-          <a-icon :type="menu.icon" />
-          <span>{{menu.menuName}}</span>
+        <a-menu-item :key="menu.key" v-if="!menu.isHasChild" >
+          <router-link :to="menu.path">
+            <a-icon :type="menu.icon" />
+            <span>{{menu.menuName}}</span>
+          </router-link>
         </a-menu-item>
         <a-sub-menu :key="menu.key" v-else>
           <span slot="title">
@@ -24,7 +26,11 @@
             <span>{{menu.menuName}}</span>
           </span>
           <template v-for="childItem in menu.child">
-            <a-menu-item :key="childItem.key">{{childItem.menuName}}</a-menu-item>
+            <a-menu-item :key="childItem.key" >
+              <router-link :to="childItem.path">
+                {{childItem.menuName}}
+              </router-link>
+            </a-menu-item>
           </template>
         </a-sub-menu>
       </template>
