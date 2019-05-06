@@ -1,12 +1,12 @@
 <template>
   <section>
-    个人中心
+    员工列表
   </section>
 </template>
 
 <script>
     export default {
-        name: "basicInfo"
+        name: "employee"
     }
 </script>
 

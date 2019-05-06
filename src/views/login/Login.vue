@@ -1,5 +1,5 @@
 <template>
-  <div class="dk_login">
+  <section class="dk_login">
     <div class="dk_login_content">
       <h3 class="mt20vh">毒牙人员管理系统</h3>
       <a-form
@@ -74,7 +74,7 @@
         </a-form-item>
       </a-form>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

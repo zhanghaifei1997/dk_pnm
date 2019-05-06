@@ -30,6 +30,20 @@ export default new Router({
           meta: {
             title: "个人中心"
           }
+        }, { // 菜单列表页面
+          path: "/menuList",
+          name: "menuList",
+          component: () => import("@/views/menuMannage/menuList"),
+          meta: {
+            title: "菜单管理"
+          }
+        }, { // 员工列表页面
+          path: "/employee",
+          name: "employee",
+          component: () => import("@/views/staff/employee"),
+          meta: {
+            title: "员工列表"
+          }
         }
       ]
     }
