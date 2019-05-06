@@ -5,7 +5,7 @@
       :type="$store.getters.CommonStatus.collapsed ? 'menu-unfold' : 'menu-fold'"
       @click="change"/>
     <div>
-      <a-dropdown>
+       <a-dropdown>
         <a-avatar shape="square" size="large" :style="{backgroundColor: color, verticalAlign: 'middle'}">{{avatarValue}}</a-avatar>
         <a class="ant-dropdown-link" href="#">
           Click me <a-icon type="down" />
