@@ -1,5 +1,6 @@
 <template>
   <a-layout-content class="dk_container">
+    <Breadcrumb />
     <router-view/>
   </a-layout-content>
 </template>
