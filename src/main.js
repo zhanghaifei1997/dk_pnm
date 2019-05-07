@@ -14,9 +14,15 @@ import './assets/css/common'
 // 引入store
 import store from './store'
 
+// 引入公用组件
+import Breadcrumb from '@/components/Breadcrumb'
+
 Vue.config.productionTip = false
 
 Vue.use(Antd)
+
+// 组件使用区域
+Vue.component(Breadcrumb.name, Breadcrumb)
 
 /* eslint-disable no-new */
 new Vue({
