@@ -22,5 +22,9 @@
 <style lang="less" scoped>
 .dk_container {
   margin: 20px;
+  height: calc(100% - 64px);
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 </style>

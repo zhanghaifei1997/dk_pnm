@@ -1,6 +1,6 @@
 <template>
   <div class="dk_layout">
-    <a-layout id="components-layout-demo-custom-trigger">
+    <a-layout class="dk-main-content" id="components-layout-demo-custom-trigger">
       <DKSider/>
       <a-layout>
         <DKHeader/>

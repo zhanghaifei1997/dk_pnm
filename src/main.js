@@ -16,6 +16,7 @@ import store from './store'
 
 // 引入公用组件
 import Breadcrumb from '@/components/Breadcrumb'
+import DKTable from "@/components/DKTable"
 
 Vue.config.productionTip = false
 
@@ -23,6 +24,7 @@ Vue.use(Antd)
 
 // 组件使用区域
 Vue.component(Breadcrumb.name, Breadcrumb)
+Vue.component(DKTable.name, DKTable)
 
 /* eslint-disable no-new */
 new Vue({
